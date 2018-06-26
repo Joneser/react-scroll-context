@@ -28,13 +28,13 @@ class ScrollContext extends Component {
         const body = window.document.body;
         const margin = window.innerWidth - body.clientWidth;
         body.style.marginRight = `${margin}px`;
-        body.style.overflow = 'hidden';
+        body.style.overflowY = 'hidden';
     };
 
     enableBodyScroll = () => {
         const body = window.document.body;
         body.style.marginRight = '0px';
-        body.style.overflow = 'auto';
+        body.style.overflowY = 'auto';
     };
 
     render() {
